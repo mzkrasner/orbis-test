@@ -1,0 +1,36 @@
+{
+  "name": "test-orbis",
+  "private": true,
+  "version": "0.0.12",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^1.0.2",
+    "@spindl-xyz/attribution": "^1.6.1",
+    "@spindl-xyz/attribution-lite": "^1.6.1",
+    "@useorbis/db-sdk": "^0.0.51-alpha",
+    "next": "^13.4.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@t3-oss/env-nextjs": "^0.10.1",
+    "viem": "~1.10.7",
+    "zod": "^3.23.8",
+    "wagmi": "~1.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.12",
+    "@types/react": "^18.2.21",
+    "eslint": "^8.15.0",
+    "eslint-config-next": "^13.4.19",
+    "next": "^13.4.19",
+    "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=16.8.0"
+  }
+}
