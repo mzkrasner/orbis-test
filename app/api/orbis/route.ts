@@ -1,6 +1,4 @@
-import { NextRequest } from "next/server";
 import { OrbisDB, type OrbisConnectResult } from "@useorbis/db-sdk";
-import { type Event } from "@/types";
 import { OrbisKeyDidAuth } from "@useorbis/db-sdk/auth";
 import { env } from "@/env.mjs";
 
@@ -26,7 +24,6 @@ export async function POST(request: Request) {
         },
       ],
     });
-
     const auth = await OrbisKeyDidAuth.fromSeed(seed);
     const authResult: OrbisConnectResult = await orbis.connectUser({ auth });
 
@@ -45,7 +42,7 @@ export async function POST(request: Request) {
       return Response.json({ data: updatequery.content });
     }
 
-    // return Response.json({ data: "test" });
+    return Response.json({ data: "test" });
   } catch (error) {
     return new Response(`Failed to generate image`, {
       status: 500,
